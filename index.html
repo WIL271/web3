@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Список гиперссылок</title>
 </head>
-<body>
-
+<body class="osnov">
 <header>
     <div class="header-container">
-            <img class="header-logo" src="Rickangry.jpg " alt="logo">
-            <span class="header-name">  Гипперссылки </span>
+        <div><img src="Rickangry.jpg" alt="Логотип компании" width="100" height="100"></div>
+        <div><p>Гипперссылки</p></div>
     </div>
 </header>
 
-<nav class="topnav">
-    <ul class="nav-list">
-        <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-    </ul>
-</nav>
+<div class="topnav">
+    <nav>
+        <ul>
+            <li><a href="#start">О нас</a></li>
+            <li><a href="#form">Контакты</a></li>
+            <li><a href="#table">FAQ</a></li>
+        </ul>
+    </nav>
+</div>
 
 <div class="container">
-    <main>
-    <section class="templates">
-    <h1>Пронумерованный список гиперссылок:</h1>
+    <h2><a id="start">Задание 1 </a></h2>
     <ol>
         <li><a href="http://example.com">example</a></li>
         <li><a href="https://example.com">example</a></li>
@@ -63,116 +64,118 @@
         <li><a href="/">Сокращенная ссылка на главную</a></li>
         <li><a href="/form.html">Сокращенная на внутреннюю</a></li>
     </ol>
+</div>
 
-    <br>
-    <table class="table">
-        <tr>
-            <th>Первый</th>
-            <th>Второй</th>
-            <th>Третий</th>
-        </tr>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-        </tr>
-        </tbody>
-    </table>
-    <br>
+<div id="tbl">
+    <div class="table">
+        <h2 id="table">Таблица</h2>
+        <table>
+            <tr>
+                <th>Первый</th>
+                <th>Второй</th>
+                <th>Третий</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
 
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <form action="/" method="POST">
-        <label>
-            Введите имя<br>
-            <input name="field-name-1" placeholder="Name">
-        </label><br>
+    <div class="form">
+        <h2>Форма </h2>
+        <form action="/" id="form">
+            <label>
+                Введите имя<br>
+                <input name="field-name-1" placeholder="Name">
+            </label><br>
 
-        <label>
-            Введите email:<br>
-            <input name="field-email" placeholder="test@example.com" type="email">
-        </label><br>
+            <label>
+                Введите email:<br>
+                <input name="field-email" placeholder="test@example.com" type="email">
+            </label><br>
 
-        <label>
-            Введите дату рождения<br>
-            <input name="field-date" value="2021-09-19" type="date">
-        </label><br>
-    </form>
+            <label>
+                Введите дату рождения<br>
+                <input name="field-date" value="2021-09-19" type="date">
+            </label><br>
+        </form>
 
-    <form action="/" method="POST">
-        Введите пол:<br>
-        <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-            Мужской</label><br>
-        <label><input type="radio" name="radio-group-1" value="Значение2">
-            Женский</label><br>
-        <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-            Высшее существо</label><br>
-    </form>
+        <form action="/" method="POST">
+            Введите пол:<br>
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                Мужской</label><br>
+            <label><input type="radio" name="radio-group-1" value="Значение2">
+                Женский</label><br>
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                Высшее существо</label><br>
+        </form>
 
-    <form action="/" method="POST">
-        Выберите кол-во конечностей:<br>
-        <label><input type="radio" name="radio-group-1" value="Значениие 5">
-            Нет конечностей</label><br>
-        <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
-            1</label>
-        <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
-            2</label>
-        <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
-            3</label>
-        <label><input type="radio" name="radio-group-1" value="Значение4">
-            Больше трех</label>
-    </form>
+        <form action="/" method="POST">
+            Выберите кол-во конечностей:<br>
+            <label><input type="radio" name="radio-group-1" value="Значениие 5">
+                Нет конечностей</label><br>
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                1</label>
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+                2</label>
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
+                3</label>
+            <label><input type="radio" name="radio-group-1" value="Значение4">
+                Больше трех</label>
+        </form>
 
-    <form action="/" method="POST">
-        <label>
-            Сверхспособности:
-            <br>
-            <select size="3" multiple name="superpower[]">
-                <option disabled>Выберите cверхспособности</option>
-                <option value="Значение1">Бессмертие</option>
-                <option value="Значение2" selected="selected">Левитация</option>
-                <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
-            </select>
-        </label><br>
+        <form action="/" method="POST">
+            <label>
+                Сверхспособности:
+                <br>
+                <select size="3" multiple name="superpower[]">
+                    <option disabled>Выберите cверхспособности</option>
+                    <option value="Значение1">Бессмертие</option>
+                    <option value="Значение2" selected="selected">Левитация</option>
+                    <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
+                </select>
+            </label><br>
 
-        <label>
-            Биография:
-            <br>
-            <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
-        </label><br>
+            <label>
+                Биография:
+                <br>
+                <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
+            </label><br>
 
-        <label><input type="checkbox" checked="checked" name="check-1">
-            с контрактом ознакомлен (а)</label><br>
-        <input type="submit" value="Отправить">
-    </form>
-    </section>
-    </main>
+            <label><input type="checkbox" checked="checked" name="check-1">
+                с контрактом ознакомлен (а)</label><br>
+            <input type="submit" value="Отправить"><br>
+        </form>
+    </div>
 </div>
 <footer>
-    <p class="bottom"><small> Котельников Владислав, 2021</small></p>
+    <p class="bottom"><small> (c) Котельников Владислав, 2021</small></p>
 </footer>
 </body>
 </html>
-
-
 
