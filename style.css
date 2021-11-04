@@ -1,120 +1,145 @@
-body {
-    margin: 0;
-    background: url("fon.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    color: black;
-    font-family: cursive;
-}
+@media (min-width: 280px) and (max-width: 426px){
+    .osnov {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+    .osnov, nav {
+        font-size: 35px;
+    }
+    nav {
+        padding: 0 0 0;
+    }
+    header {
+        width: 960px;
+        font-size: 50px;
+    }
+    .header-container img{
+        width: 30vw;
+        height: 30vw;
+    }
+    footer {
+        width: 960px;
+    }
+    #tbl{
+        display: flex;
+        flex-direction: column;
+    }
+    .form{
+        order: 1;
+    }
 
-.templates {
-    display: flex;
-    flex-direction: column;
-}
+    .table {
+        order: 2;
+    }
 
-* {
-    box-sizing: border-box;
+    .topnav ul li{
+        display: flex;
+    }
+    .topnav nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
 }
-
-a {
-    color: #000000;
-    text-decoration: none;
+@media (min-width: 1000px){
+    .topnav ul li{
+        display: flex;
+    }
+    .topnav nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        padding: 0px 30px 5px;
+    }
+    header {
+        font-size: 50px;
+    }
 }
-
-a:visited {
-    color: #0a1a83;
-    text-decoration: none;
-}
-a:hover {
-    color: #c2e1ff;
-}
-
-
 
 header {
-    border-radius: 30px 30px 0px 0px;
-    box-shadow: 2px 4px 20px #201c1c;
-    background-color: #9DE0D7;
-    height: 100px;
-    padding: 20px 150px;
-    margin: auto;
+    height: 150px;
 }
-
 .header-container {
+    height: 150px;
+    max-width: 960px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-}
+    margin: 0px auto;
 
-.header-logo {
-    width: 100px;
-    height: 70px;
-    margin-right: 25px;
-    border-radius: 50%;
 }
-
-.header-name {
-    font-size: 28px;
+.header-container p {
+    font-family: Courier, monospace;
     font-weight: bold;
     color: white;
-    margin-left: 20px;
+    letter-spacing: 4px;
 }
-
-
 
 .topnav {
-    background-color: #91B3FB;
-    padding: 0;
-    margin: auto;
-    border-radius: 0px 0px 30px 30px;
-
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 5px;
 }
 
-.nav-list {
-    margin: 0;
-    padding: 0 145px;
+.topnav ul li {
+    padding: 0px 50px 5px;
+    font-size: 40px;
+}
+.topnav nav ul {
     list-style: none;
 }
-
-.nav-item {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 16px;
+body {
+    font-family: Courier, monospace;
+    font-size: 20px;
+    color: rgb(#FFF);
+    background-color: #9DE0D7;
+    font-weight: bold;
 }
-
-.nav-link {
-    font-size: 17px;
-    color: #f2f2f2;
-}
-
-
-
-
 .container {
-    max-width: 960px;
-    padding: 0 5px;
-    margin: 0 auto;
+    width: 955px;
+    color: rgb(#FFF);
+    margin: 20px auto;
+    padding: 0px 5px;
 }
-
-
-
-
+.container img{
+    width: 50px;
+    height: 50px;
+}
 .table {
-    width: 80%;
-    margin: auto auto 20px;
-    order: 1;
-    border-radius: 10px 10px;
+    padding: 0px 5px 5px;
 }
 
-table {
-    color: black;
-    border: 1px solid #030e54;
-    width: 500px;
+td{
+    border: none;
 }
 
-td, th {
-    border: 1px solid #03184d;
-    text-align: center;
-    border-radius: 10px 10px;
+tr{
+    border: none;
+}
+
+.form {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0px 5px 5px;
+}
+footer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0px 5px 5px;
+}
+.form, .table, .topnav {
+    width: 955px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: #2f5687;
+    color: rgb(220, 220, 220);
 }
 
 table tr:nth-child(2n) {
@@ -125,33 +150,10 @@ table tr:nth-child(2n+1) {
     background-color: #91B3FB;
 }
 
-
-
-
-.bottom {
-    padding-right: 30px;
-    float: right;
-    color: #502223;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-footer {
-    border-radius: 30px 30px 0px 0px;
-    background-color: #ACD7E7;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    height: 90px;
-    padding: 20px;
-}
-
-@media (min-width: 568px) {
-    .nav-list {
-        flex-direction: row;
-    }
-
-    table {
-        order: 0;
-    }
+header, .topnav, .container, .table, .form, footer{
+    background-color: #2f5687;
+    border-width: thick;
+    border-style: double;
+    border-color: white;
+    border-image: initial;
 }
