@@ -1,8 +1,9 @@
-@media (min-width: 280px) and (max-width: 426px){
-    .osnov {
-        display: flex;
-        flex: 1 1 auto;
-        flex-direction: column;
+@media (max-width: 700px){
+    body{
+        color: rgb(#FFF);
+        background-color: #9DE0D7;
+        font-weight: bold;
+        margin: 0 auto;
     }
     .osnov, nav {
         font-size: 35px;
@@ -11,25 +12,37 @@
         padding: 0 0 0;
     }
     header {
-        width: 960px;
+        max-width:100%;
         font-size: 50px;
     }
+    .header-container{
+        width: 90%;
+    }
+
     .header-container img{
         width: 30vw;
         height: 30vw;
     }
+    .divref{
+        max-width:100%;
+        padding: 20px;
+    }
     footer {
-        width: 960px;
+        max-width:100%;
     }
     #tbl{
         display: flex;
         flex-direction: column;
     }
     .form{
+        max-width:100%;
         order: 1;
     }
-
+    #tbl{
+        max-width:100%;
+    }
     .table {
+
         order: 2;
     }
 
@@ -42,8 +55,15 @@
         align-items: left;
         justify-content: left;
     }
+    header, .topnav, .container, .table, .form, footer{
+        background-color: #2f5687;
+        border-width: thick;
+        border-style: double;
+        border-color: white;
+        border-image: initial;
+    }
 }
-@media (min-width: 1000px){
+@media (min-width: 701px){
     .topnav ul li{
         display: flex;
     }
@@ -63,6 +83,8 @@
 
 header {
     height: 150px;
+    margin-top: 0px;
+    width: 100%;
 }
 .header-container {
     height: 150px;
@@ -70,7 +92,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0px auto;
+    margin: auto;
 
 }
 .header-container p {
@@ -99,6 +121,11 @@ body {
     color: rgb(#FFF);
     background-color: #9DE0D7;
     font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+.divref{
+    padding: 10px;
 }
 .container {
     width: 955px;
@@ -128,7 +155,6 @@ tr{
     padding: 0px 5px 5px;
 }
 footer {
-    margin-bottom: 30px;
     margin-top: 30px;
     padding: 0px 5px 5px;
 }
